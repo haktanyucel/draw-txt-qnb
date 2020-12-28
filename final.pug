@@ -15,9 +15,7 @@ html(lang="en")
             body {
                 min-height: 100%; 
                 min-width:99%;
-                background: url('bg.png');
-                background-size:cover;
-                background-repeat:no-repeat;
+                background-color:#214785;
                 font-family: 'Titillium Web', cursive;
                 font-weight: 100;
             }
@@ -51,16 +49,15 @@ html(lang="en")
             }
 
     body
-        .row(style='text-align:right')
-            .col-md-4
-            .col-md-6(style='margin-top:70px')
-                h1.text-white Mutlu Yıllar QNB Finans Faktoring Ailesi
+        .row(style='text-align:right;margin:0; padding:0')
+            .col-md-12(style='margin:0; padding:0')
+                img(src='header.png' style='width:100%')
         .row(style='margin-top:10px')
         .row
             .col-md-5(style='margin-left:120px')
                 h2.text-white Çekilişe Katılanlar
                 each name in array
-                    p.text-white(style='background-color:#828282') #{name}
+                    p.text-white #{name}
             .col-md-6(style='')
                 h2.text-white.sonuc.d-none Çekilişi Kazanan
                 h2.text-white.sonuc.d-none(style='font-weight:bold; text-decoration:underline') #{winner}
